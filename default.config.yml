@@ -20,6 +20,7 @@ homebrew_installed_packages:
   - bash-completion
   - nmap
   - wget
+  - r
 
 homebrew_taps:
   - homebrew/core
@@ -32,9 +33,12 @@ homebrew_cask_apps:
   - docker
   - cheatsheet
 #  - google-chrome
+  - rstudio
   - iterm2 
   - slack
   - rectangle
+  - basictex
+#  - bluestacks
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
