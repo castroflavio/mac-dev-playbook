@@ -1,10 +1,10 @@
+---
 homebrew_installed_packages:
   - autoconf
   - bash-completion
   - gettext
   - sqlite
   - ssh-copy-id
-  - cowsay
   - readline
   - pv
   - wget
