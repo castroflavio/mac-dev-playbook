@@ -1,0 +1,86 @@
+---
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+dockitems_persist: []
+
+configure_sudoers: false
+sudoers_custom_config: ""
+
+dotfiles_repo: https://github.com/castroflavio/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_version: master
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+
+homebrew_installed_packages:
+  # Core development tools
+  - ansible
+  - bash-completion
+  - git
+  - gh
+  - gpg
+  - iperf
+  - libevent
+  - nmap
+  - node
+  - python@3.12
+  - tmux
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  # Browsers
+  - firefox
+  - brave-browser
+  
+  # Development tools
+  - docker
+  - iterm2
+  - visual-studio-code
+  - wireshark
+  
+  # Productivity and utilities
+  - alfred
+  - rectangle
+  - slack
+  - vlc
+  - zoom
+  
+  # Security and network
+  - nordvpn
+  - viscosity
+  - zerotier-one
+
+# See `geerlingguy.mac.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+composer_packages: []
+gem_packages: []
+npm_packages: []
+pip_packages: []
+
+# Set to 'true' to configure VSCode instead of Sublime Text
+configure_sublime: false
+configure_vscode: true
+vscode_extensions: []
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
